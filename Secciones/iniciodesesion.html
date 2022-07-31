@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
-
-    <header>
+    <header class="fondo">
+        <section class="contenido">
+            <h1>Sama Accesorios</h1>
 
         <nav>
             <ul>
@@ -27,27 +28,57 @@
                 <li>
                     <a href="quienessomos.html">Quienes somos</a>
                 </li>
-                <li>
-                    <a href="lomasdestacado.html">Lo mas destacado</a>
-                </li>
+                
             </ul>
         </nav>
-
+        </section>
     </header>
-    <form>
-        <label for="nombre_apellido">Nombre y Apellido</label>
-        <input type="text" name="nombre_apellido"/> <br>
-        <label for="contraseña_">Contraseña</label>
-        <input type="text" name="contraseña"/> <br>
-
-        <input type="submit" value="Inicio de Sesion">
-        <input type="reset" value="Borrar">
-        <input type="submit" value="Crear Cuenta">
-
+    <section class="iniciosesion">
+    <form class="form">
+            <h2 class="form-titulo">Inicia Sesion</h2>
+            <p class="form-parrafo">Aun no tienes una cuenta?<a href="" class="form-link">Entra aqui</a></p> 
+        <div class="form-contenido">
+            <div class="form-grupo">
+                <input type="text" id="nombre_apellido" class="form-input" placeholder=" "/>
+                <label for="nombre_apellido" class="form-label">Nombre y Apellido</label>
+                <span class="form-linea"></span>
+            </div>
+            <div class="form-grupo">
+                <input type="text" id="usuario" class="form-input" placeholder=" "/>
+                <label for="usuario" class="form-label">Usuario</label>
+                <span class="form-linea"></span>
+            </div>
+            <div class="form-grupo">
+                <input type="text" id="contraseña" class="form-input" placeholder=" "/>
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <span class="form-linea"></span>
+            </div>
+            <input type="submit" class="form-submit" value="Entrar">
+        </div>
     </form>
-
+    </section>
+    
+    
     <footer>
-
+        <section class="ins">
+            <div>
+                <h3>Todos los derechos reservados</h3>
+                <div>
+                <img src="../Imagenes/instagram.png" alt="">
+                <img src="../Imagenes/facebook.png" alt="">
+                </div>
+                <div class="whatsapp">
+                    <img src="../Imagenes/whatsapp.png" alt="">
+                </div>
+            </div> 
+            </section>
+            <div>
+                 <ul>
+                    <li>Contacto</li>
+                    <li>Inicio</li>
+                    <li>Productos</li>
+                </ul>
+            </div>
     </footer>
     
 </body>
